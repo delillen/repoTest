@@ -9,10 +9,12 @@ const titleArray = [
                     "Hey !!!"
                     ];
 
-const greetingTitle = (arr) => {
+const greetingTitle = arr => {
     const randomNumber = Math.floor(Math.random() * 6);
-    let title = document.getElementById("title");
-    title.textContent = arr[randomNumber];
+    console.log(`Random Number is: ${randomNumber}`);
+    let title = document.getElementById("myTitle");
+    console.log(`Document by id: ${title}`);
+    title.innerHTML = arr[randomNumber];
 };
 
 greetingTitle(titleArray);
